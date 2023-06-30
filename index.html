@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/code.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font -->
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600,400,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>imJayvie | A Web Developer</title>
+  </head>
+  <body>
+    <header class="header container">
+      <nav>
+        <ul class="header__menu">
+          <li><a class="header__link" href="#about">About</a></li>
+          <li><a class="header__link" href="#featured">Work</a></li>
+          <li><a class="header__link" href="#contact">Contact</a></li>
+          <li class="header__line"></li>
+          <li>
+            <button class="header__sun" id="theme-toggle">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"
+                />
+              </svg>
+            </button>
+          </li>
+          <li>
+            <a
+              class="header__resume btn"
+              href="/webdevresume.pdf"
+              download="Jayvies_resume"
+              >Resume</a
+            >
+          </li>
+        </ul>
+        <button class="header__bars">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </button>
+      </nav>
+    </header>
+    <!-- mobile nav -->
+    <div class="mobile-nav">
+      <nav>
+        <ul class="mobile-nav__menu">
+          <li>
+            <a href="#about" class="mobile-nav__link">About</a>
+          </li>
+          <li>
+            <a href="#featured" class="mobile-nav__link">Work</a>
+          </li>
+          <li>
+            <a href="#contact" class="mobile-nav__link">Contact</a>
+          </li>
+          <li class="mobile-nav__link-line"></li>
+          <li>
+            <button class="mobile-nav__sun" id="theme-toggle">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"
+                />
+              </svg>
+            </button>
+          </li>
+          <li>
+            <a class="mobile-nav__btn btn" href="#">Resume</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- end of mobile nav -->
+    <main>
+      <section class="hero container">
+        <img loading="lazy" class="hero__img" src="/myImage.jpg" alt="" />
+        <h2 class="hero__subtitle">Hi, I'm Jayvie! 👋</h2>
+        <h1 class="hero__title">
+          FULL-STACK <br />
+          WEB DEVELOPER
+        </h1>
+        <p class="hero__description">
+          Igniting <strong>Creativity</strong>. Elevating
+          <strong>Quality</strong>. Welcome to my portfolio, where innovative
+          design meets meticulous attention to detail, delivering captivating
+          digital experiences that leave a lasting impression.
+        </p>
+        <a class="hero__btn btn" href="mailto:jayvievievie@gmail.com"
+          >Reach Out</a
+        >
+      </section>
+      <section class="about container section" id="about">
+        <div class="about__content">
+          <h2 class="about__title">About</h2>
+          <p class="about__description">
+            Welcome! I'm a budding <strong>full-stack</strong> web developer
+            driven by passion. With a solid foundation in HTML, CSS, and
+            JavaScript, I strive to create user-friendly websites.
+          </p>
+          <p class="about__description">
+            My approach blends <strong>creativity</strong> and
+            <strong>problem-solving</strong>. Collaborating closely with
+            clients, I create innovative solutions that exceed expectations.
+          </p>
+          <p class="about__description">
+            As a newbie web developer, I value teamwork and continuous
+            improvement. Eager to learn from experienced professionals, I bring
+            a <strong>strong work ethic</strong> and attention to detail.
+          </p>
+          <hr class="about__hr" />
+          <h3 class="about__subtitle">Technologies</h3>
+          <ul class="about__ul">
+            <li class="about__list">JavaScript (ES6+)</li>
+            <li class="about__list">CSS</li>
+            <li class="about__list">HTML</li>
+            <li class="about__list">React.js</li>
+            <li class="about__list">Node.js</li>
+            <li class="about__list">MySQL</li>
+          </ul>
+        </div>
+        <div class="about__img-wrapper">
+          <img
+            loading="lazy"
+            src="https://www.svgrepo.com/show/240415/programmer.svg"
+            alt=""
+            class="about__img"
+          />
+        </div>
+      </section>
+      <section class="featured container section" id="featured">
+        <h3 class="featured__subtitle">Featured project</h3>
+        <div class="featured__title-wrapper">
+          <h2 class="featured__title">Pure & Pristine Inc.</h2>
+          <a href="#" class="featured__title-link">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244"
+              />
+            </svg>
+          </a>
+        </div>
+        <p class="featured__description">
+          Introducing Pure and Pristine, a web development project that embodies
+          dedication and growth. Experience its intuitive user interfaces,
+          responsive designs, and optimized performance, showcasing the journey
+          of a budding developer. Immerse yourself in a captivating web
+          experience, where meticulous attention to detail and creative
+          problem-solving come together. Explore the beauty of simplicity and
+          the possibilities of a beginner's passion for coding.
+        </p>
+        <div class="featured__info-container">
+          <div>
+            <h3 class="featured__label">Tech stack</h3>
+            <ul class="featured__teck-stack">
+              <li class="featured__info">TailwindCSS</li>
+              <li class="featured__info">React.js</li>
+              <li class="featured__info">Framer Motion</li>
+              <li class="featured__info">JavaScript</li>
+              <li class="featured__info">CSS</li>
+              <li class="featured__info">MySQL</li>
+              <li class="featured__info">Axios</li>
+              <li class="featured__info">Express</li>
+              <li class="featured__info">Node.js</li>
+              <li class="featured__info">JWTToken</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="featured__label">Project type</h3>
+            <p class="featured__info">Full-stack</p>
+          </div>
+          <div>
+            <h3 class="featured__label">Timeline</h3>
+            <p class="featured__info">May 22 - May 30</p>
+          </div>
+        </div>
+        <div class="featured__image-container">
+          <div class="featured__image-wrapper">
+            <img
+              loading="lazy"
+              src="/ppapp-landing.png"
+              alt="Pure & Pristine Inc. Hero"
+            />
+          </div>
+          <div class="featured__image-wrapper">
+            <img
+              loading="lazy"
+              src="/ppapp-services.png"
+              alt="Pure & Pristine Inc. Services"
+            />
+          </div>
+          <div class="featured__image-wrapper">
+            <img
+              loading="lazy"
+              src="/ppapp-about.png"
+              alt="Pure & Pristine Inc. About"
+            />
+          </div>
+          <div class="featured__image-wrapper">
+            <img
+              loading="lazy"
+              src="/ppapp-work.png"
+              alt="Pure & Pristine Inc. Work"
+            />
+          </div>
+          <div class="featured__image-wrapper">
+            <img
+              loading="lazy"
+              src="/ppapp-signin.png"
+              alt="Pure & Pristine Inc. Sign"
+            />
+          </div>
+          <div class="featured__image-wrapper">
+            <img
+              loading="lazy"
+              src="/ppapp-signup.png"
+              alt="Pure & Pristine Inc."
+            />
+          </div>
+        </div>
+      </section>
+      <section class="work container section">
+        <h2 class="work__title">Projects</h2>
+        <p class="work__description">
+          Here are some of my recent mini web projects, demonstrating my solid
+          foundation in web development. Each project is a stepping stone in my
+          journey, allowing me to explore new concepts and techniques.
+        </p>
+        <div class="work__container">
+          <!-- project 1 -->
+          <h3 class="work__project-title">Invasion</h3>
+          <div class="work__image-wrapper work__image1">
+            <img
+              loading="lazy"
+              src="/invasion.png"
+              alt="Invasion Website"
+              class="work__project-image"
+            />
+          </div>
+          <div class="work__project work__content1">
+            <h3 class="work__project-subtitle">Invasion</h3>
+            <p class="work__project-description1">
+              My Invasion project, developed with HTML and CSS, showcases my web
+              design skills and attention to detail.
+            </p>
+            <p class="work__project-description2">
+              It demonstrates my front-end expertise, delivering a great user
+              experience with clean styling and Bootstrap components.
+            </p>
+            <a class="btn work__project-btn" href="#">Website</a>
+          </div>
+          <!-- project 2 -->
+          <h3 class="work__project-title">Animx</h3>
+          <div class="work__image-wrapper work__image2">
+            <img
+              loading="lazy"
+              src="/animx.png"
+              alt="Invasion Website"
+              class="work__project-image"
+            />
+          </div>
+          <div class="work__project work__content2">
+            <h3 class="work__project-subtitle">Animx</h3>
+            <p class="work__project-description1">
+              AnimX showcases custom designs, crafted purely with CSS, free from
+              frameworks or components for full customization.
+            </p>
+            <p class="work__project-description2">
+              With CSS, AnimX delivers captivating animations, highlighting
+              creativity and versatility in enhancing user experiences.
+            </p>
+            <a class="btn work__project-btn" href="#">Website</a>
+          </div>
+        </div>
+      </section>
+      <section class="contact container section" id="contact">
+        <h2 class="contact__title">Get in contact</h2>
+        <p class="contact__description">
+          Connect with me directly through the contact section to discuss
+          collaborations, opportunities, or simply to say hello.
+        </p>
+        <a
+          class="contact__btn btn"
+          href="mailto:jayvievievie@gmail.com"
+          target="_blank"
+          >Reach out</a
+        >
+      </section>
+    </main>
+    <footer class="footer container section">
+      <h3 class="footer__title">~ Jayvielyn Samson ~</h3>
+    </footer>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
